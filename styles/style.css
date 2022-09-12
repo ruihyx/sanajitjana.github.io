@@ -41,7 +41,6 @@ body {
 .heading h2 {
   font-size: 30px;
 }
-
 .heading span {
   font-size: var(--p-font);
   color: rgb(2, 166, 70);
@@ -79,6 +78,7 @@ header.shadow {
 }
 .navbar a:hover {
   color: var(--hover);
+  border-bottom: 2px solid var(--hover);
 }
 #menu-icon {
   font-size: 24px;
@@ -89,11 +89,13 @@ header.shadow {
 #darkmode {
   font-size: 22px;
   cursor: pointer;
+  border: 1px solid transparent;
+  margin: 1px 10px 0px 10px;
 }
 .home {
   position: relative;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   align-items: center;
@@ -101,33 +103,27 @@ header.shadow {
 }
 .home-img {
   order: 3;
-  shape-outside: circle(100);
+  margin: auto;
 }
 .home-img img {
-  width: 350px;
-  height: 400px;
-  margin-left: 120px;
-  border-radius: 30%;
-
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 10px;
 }
 .home-text span {
-  font-size: var(--medium-font);
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 }
 .home-text h1 {
   font-size: var(--big-font);
 }
 .home-text h2 {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .home-text p {
   font-size: var(--p-font);
   font-weight: 400;
   margin: 0.7rem 0 1rem;
+  margin-top: 20px;
 }
 .social {
   display: flex;
@@ -382,6 +378,15 @@ form textarea {
   section {
     padding: 50px 4%;
   }
+  .home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 @media (max-width: 881px) {
   :root {
@@ -429,16 +434,6 @@ form textarea {
   .scroll-down {
     display: none;
   }
-  .home {
-    grid-template-columns: 0.5fr 3fr;
-  }
-  .home-text {
-    grid-column: 1/3;
-    padding-left: 1.4rem;
-  }
-  .home-img {
-    order: initial;
-  }
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -462,6 +457,22 @@ form textarea {
   }
   .contact-button {
     margin-left: 25%;
+  }
+}
+@media (max-width: 426px) {
+  .social {
+    display: none;
+  }
+  .home {
+    grid-template-columns: 0.5fr 3fr;
+  }
+  .home-text {
+    grid-column: 1/3;
+    padding-left: 1.4rem;
+    margin-top: 50px;
+  }
+  .home-img {
+    margin: 50px 0px 0px 50px;
   }
 }
 @media (max-width: 340px) {
