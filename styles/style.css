@@ -280,20 +280,20 @@ span {
 }
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 30px;
   margin-top: 2rem;
 }
-.portfolio-img {
+.portfolio-projects {
   overflow: hidden;
   border-radius: 0.5rem;
 }
-.portfolio-img img {
+.portfolio-projects img {
   width: 100%;
   display: block;
 }
-.portfolio-img img:hover {
-  transform: scale(1.1);
+.portfolio-projects img:hover {
+  /* transform: scale(1.1); */
   transition: 1s;
 }
 .contact-form {
