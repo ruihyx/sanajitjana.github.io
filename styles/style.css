@@ -254,7 +254,6 @@ span {
 .services-box:hover {
   background-color: #02225a;
 }
-
 .services-box h3 {
   font-size: 1rem;
   font-weight: 600;
@@ -473,6 +472,15 @@ form textarea {
     margin: 50px 0px 0px 50px;
   }
 }
+@media (max-width: 376px) {
+  .services-content {
+    gap: 20px;
+  }
+  .services-box {
+    padding: 5px;
+    width: 150px;
+  }
+}
 @media (max-width: 340px) {
   :root {
     --big-font: 1.7rem;
@@ -496,5 +504,12 @@ form textarea {
   }
   .contact-button {
     margin-left: 25%;
+  }
+  .services-content {
+    gap: 20px;
+  }
+  .services-box {
+    padding: 0px;
+    width: 120px;
   }
 }
