@@ -109,8 +109,9 @@ header.shadow {
   margin: auto;
 }
 .home-img img {
-  border-radius: 10px;
+  border-radius: 5px;
 }
+
 .home-text span {
   font-size: 16px;
   font-weight: 400;
@@ -145,7 +146,7 @@ header.shadow {
   background: var(--main-color);
   color: #fff;
   padding: 0.7rem 1.3rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 .btn:hover {
   background: var(--hover);
@@ -160,7 +161,7 @@ header.shadow {
 
 .about-img img {
   width: 80%;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 .about-text p {
   font-size: var(--p-font);
@@ -214,7 +215,7 @@ span {
   width: 100%;
   height: 0.5rem;
   background: hsla(260, 100%, 44%, 0.4);
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 .percent-bar {
   position: absolute;
@@ -222,7 +223,7 @@ span {
   left: 0;
   height: 0.5rem;
   background: var(--main-color);
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 .html-bar {
   width: 94%;
@@ -247,7 +248,7 @@ span {
   padding: 10px;
   width: 150px;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   border-bottom: 2px solid var(--main-color);
   box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
 }
@@ -280,21 +281,57 @@ span {
 }
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 50px 30px;
   margin-top: 2rem;
 }
 .portfolio-projects {
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+.portfolio-projects:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .portfolio-projects img {
   width: 100%;
   display: block;
 }
-.portfolio-projects img:hover {
-  /* transform: scale(1.1); */
-  transition: 1s;
+.project-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-title .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 10px 0px 20px;
+}
+.project-title .action {
+  margin: 20px 20px 0px 10px;
+  font-size: 22px;
+}
+.project-title a {
+  color: #02225a;
+}
+.project-title a:hover {
+  color: var(--hover);
+}
+.bxl-github {
+  margin-right: 5px;
+}
+.project-desc {
+  font-size: 15px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 20px 30px 20px;
 }
 .contact-form {
   display: grid;
@@ -309,7 +346,7 @@ span {
 form input,
 textarea {
   padding: 15px;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   width: 100%;
   border: none;
   outline: none;
