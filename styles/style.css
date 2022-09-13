@@ -65,7 +65,10 @@ header.shadow {
 .logo {
   font-size: 1.61rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: var(--main-color);
+}
+.logo :hover {
+  color: var(--hover);
 }
 .navbar {
   display: flex;
