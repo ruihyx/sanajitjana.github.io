@@ -67,7 +67,7 @@ header.shadow {
   font-weight: 600;
   color: var(--main-color);
 }
-.logo :hover {
+.logo:hover {
   color: var(--hover);
 }
 .navbar {
