@@ -367,7 +367,9 @@ form textarea {
 .copyright a {
   color: #22cf91;
 }
+
 /* Making Responsive */
+
 @media (max-width: 991px) {
   header {
     padding: 18px 4%;
