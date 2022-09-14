@@ -210,3 +210,9 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+//preloader
+let preloader = document.getElementById("loading");
+function preLoader() {
+  preloader.style.display = "none";
+}
