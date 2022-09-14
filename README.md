@@ -21,7 +21,7 @@
 
 ## 🚨 Forking this repo (please read!)
 
-This repositoty is fully Open Source, Feel free to clone this, yes you heard it right - you can fork this repo. Before that please give me a star, fork it and customized as per your wish. If you face any dificulty you can connect with me <a href="mailto:mail.sanajitjana@gmail.com">mail.sanajitjana@gmail.com</a>.
+This repositoty is fully Open Source, Feel free to fork this, yes you heard it right - you can fork this repo without asking to anyone. Before that please give me a star, fork it and customized as per your wish. If you face any dificulty you can connect with me <a href="mailto:mail.sanajitjana@gmail.com">mail.sanajitjana@gmail.com</a>.
 
 <br/>
 
