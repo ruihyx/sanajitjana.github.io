@@ -673,7 +673,7 @@ img {
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
+/*==================== Project ====================*/
 .services__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
@@ -864,21 +864,13 @@ img {
   margin: 20px 20px 0px 10px;
   font-size: 22px;
 }
-.project-title .action .bx {
-  transition: transform 0.3s;
-}
-.project-title .action .bx:hover {
-  transform: scale(1.2);
-}
 .project-title a {
   color: #02225a;
 }
 .project-title a:hover {
-  color: var(--hover);
+  color: #43b5cb;
 }
-.bxl-github {
-  margin-right: 5px;
-}
+
 .project-desc {
   font-size: 15px;
   margin: 20px;
@@ -1466,7 +1458,7 @@ form textarea {
     transform: translateX(-6rem);
   }
   .services__container {
-    grid-template-columns: repeat(3, 238px);
+    grid-template-columns: repeat(3, 300px);
   }
 
   .portfolio__content {
