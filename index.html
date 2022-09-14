@@ -2,373 +2,780 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sanajit Jana</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./packages/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./packages/css/styles.css" />
+    <link rel="stylesheet" href="./packages/css/work.css" />
+
+    <title>Sanajit Jana</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./packages/images/logo.png" alt="" />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
 
-    <header>
-      <a href="/" class="logo">SJ</a>
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="bx bx-moon" id="darkmode" title="Day-Night"></div>
-      </ul>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!-- Home -->
-
-    <section class="home" id="home">
-      <div class="social">
-        <a
-          href="https://www.linkedin.com/in/sanajitjana01/"
-          target="_blank"
-          rel="noopener"
-          title="Linkedin"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-
-        <a
-          href="https://github.com/sanajitjana"
-          target="_blank"
-          rel="noopener"
-          title="GitHub"
-          ><i class="bx bxl-github"></i
-        ></a>
-
-        <a
-          href="https://twitter.com/sanajitjana01"
-          target="_blank"
-          rel="noopener"
-          title="Twitter"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-
-        <a
-          href="https://instagram.com/sanajitjana01"
-          target="_blank"
-          rel="noopener"
-          title="Instagram"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-      </div>
-
-      <div class="home-text">
-        <span>Hello, I'm</span>
-        <h1>Sanajit Jana</h1>
-        <h2>Java Backend Developer</h2>
-        <p>
-          I'm a software engineer specializing in building exceptional digital
-          experiences. Currently, I'm focused on learning Java language and Data
-          structure algorithm.
-        </p>
-        <a
-          href="./resource/Sanajit Jana_Resume.pdf"
-          title="Resume"
-          class="btn"
-          download
-          >Resume</a
-        >
-      </div>
-
-      <div class="home-img">
-        <img
-          src="./images/sanajit-jana.png"
-          alt="image"
-          title="Sanajit Jana"
-          height="300px"
-        />
-      </div>
-    </section>
-
-    <!-- About -->
-
-    <section class="about" id="about">
-      <div class="heading">
-        <h2>About Me</h2>
-        <span>Introduction</span>
-      </div>
-      <div class="about-container">
-        <div class="about-text">
-          <p>
-            Innovative, task-driven professional with a strong understanding of
-            web development, along with 30 weeks(1000+ hrs) of coding experience
-            and excellent communication skills, seeking an entry-level position
-            to begin my career in a high-level professional environment to make
-            use of my interpersonal skills to achieve the goals of a company and
-            to intensify my skillset along the way.
-          </p>
-          <div class="information"></div>
-          <!-- <a href="images/sanajit.avif" class="btn">Resume</a> -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-
-    <section class="services" id="skills">
-      <div class="heading">
-        <h2>Skills</h2>
-        <span>My Skills</span>
-      </div>
-      <div class="services-content">
-        <div class="services-box">
-          <i class="bx bxl-java"></i>
-          <h3>Java</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-spring-boot"></i>
-          <h3>Spring Boot</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-data"></i>
-          <h3>MySQL</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-aws"></i>
-          <h3>AWS</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-html5"></i>
-          <h3>HTML</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-css3"></i>
-          <h3>CSS</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-javascript"></i>
-          <h3>JavaScript</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-git"></i>
-          <h3>Git</h3>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-github"></i>
-          <h3>GitHub</h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work -->
-
-    <section class="portfolio" id="portfolio">
-      <div class="heading">
-        <h2>Projects</h2>
-        <span>My Recent Work</span>
-      </div>
-      <div class="portfolio-content">
-        <div class="portfolio-projects">
-          <div class="project-img">
-            <img src="https://picsum.photos/id/20/600/300" alt="" />
-          </div>
-          <div class="project-title">
-            <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
-            <h3 class="action">
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <!-- linkedin -->
               <a
-                href="github"
-                title="Source Code"
+                href="https://www.linkedin.com/in/sanajitjana01/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+
+              <!-- github -->
+              <a
+                href="https://www.github.com/sanajitjana"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+
+              <!-- twitter -->
+              <a
+                href="https://twitter.com/sanajitjana01"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+
+              <!-- instagram -->
+              <a
+                href="https://twitter.com/sanajitjana01"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+
+            <div class="home__data">
+              <span style="font-size: 16px">Hi, my name is</span>
+              <h1 class="home__title">Sanajit Jana</h1>
+              <h3 class="home__subtitle">I build things for the web.</h3>
+              <p class="home__description">
+                I'm a software engineer specializing in building exceptional
+                digital experiences. Currently, focusing on learn Java language
+                and Data structure and algorithm.
+              </p>
+              <a href="#contact" class="button button--flex home__button">
+                Contact Me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll Down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img
+            src="packages/images/sanajit-jana.png"
+            alt=""
+            class="about__img"
+          />
+          <div class="about__data">
+            <p class="about__description">
+              My first interest in web world started back from college where I
+              was working in team that was building a Library Management System,
+              online platform for my college. This exposure excited me to build
+              a career in coding.
+              <br />
+              Fast-forward to today, and I had the privilege of working at in a
+              <a
+                href="https://uaguria.com/"
                 target="_blank"
                 rel="noopener"
+                style="color: #43b5cb"
               >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="web" title="Live Preview" target="_blank" rel="noopener">
-                <i class="bx bx-link-external"></i>
-              </a>
-            </h3>
-          </div>
-          <div class="project-desc">
-            <p>
-              Allowing backpack travelers to perfectly plan their trip through
-              an open-source platform similar to TripAdvisor. With over 1m MAU,
-              YelpCamp has been the crowds favorite in 2021.
-            </p>
-          </div>
-          <div class="project-tech">
-            <p>
-              HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
-              GitHub
-            </p>
-          </div>
-        </div>
-        <div class="portfolio-projects">
-          <div class="project-img">
-            <img src="https://picsum.photos/id/40/600/300" alt="" />
-          </div>
-          <div class="project-title">
-            <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
-            <h3 class="action">
+                IT start-up</a
+              >
+              and with a
               <a
-                href="github"
-                title="Source Code"
+                href="https://patelgtech.com/"
                 target="_blank"
                 rel="noopener"
-              >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="web" title="Live Preview" target="_blank" rel="noopener">
-                <i class="bx bx-link-external"></i>
-              </a>
-            </h3>
-          </div>
-          <div class="project-desc">
-            <p>
-              Allowing backpack travelers to perfectly plan their trip through
-              an open-source platform similar to TripAdvisor. With over 1m MAU,
-              YelpCamp has been the crowds favorite in 2021.
+                style="color: #43b5cb"
+                >news-magazine republication agency</a
+              >.
             </p>
-          </div>
-          <div class="project-tech">
-            <p>
-              HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
-              GitHub
-            </p>
-          </div>
-        </div>
-        <div class="portfolio-projects">
-          <div class="project-img">
-            <img src="https://picsum.photos/id/60/600/300" alt="" />
-          </div>
-          <div class="project-title">
-            <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
-            <h3 class="action">
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">1000+</span>
+                <span class="about__info-name"
+                  >hourse of<br />
+                  coding</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">300+</span>
+                <span class="about__info-name"
+                  >problems <br />
+                  solved in DSA</span
+                >
+              </div>
+              <div>
+                <span class="about__info-title">02+</span>
+                <span class="about__info-name">companies<br />worked</span>
+              </div>
+            </div>
+
+            <div class="about__buttons">
               <a
-                href="github"
-                title="Source Code"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="web" title="Live Preview" target="_blank" rel="noopener">
-                <i class="bx bx-link-external"></i>
-              </a>
-            </h3>
-          </div>
-          <div class="project-desc">
-            <p>
-              Allowing backpack travelers to perfectly plan their trip through
-              an open-source platform similar to TripAdvisor. With over 1m MAU,
-              YelpCamp has been the crowds favorite in 2021.
-            </p>
-          </div>
-          <div class="project-tech">
-            <p>
-              HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
-              GitHub
-            </p>
+                href="./packages/resume/Sanajit Jana_Resume.pdf"
+                download="Sanajit Jana_Resume"
+                class="button button--flex"
+                >Resume<i class="uil uil-download-alt button__icon"></i
+              ></a>
+            </div>
           </div>
         </div>
-        <div class="portfolio-projects">
-          <div class="project-img">
-            <img src="https://picsum.photos/id/80/600/300" alt="" />
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technologies</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-analytics skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Backend</h1>
+                  <span class="skills__subtitle">More than 1 years</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <!-- tools -->
+                <div class="tech-row">
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-file-check skills__icon"></i>
+                      <h3 class="services__title">Java<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-book-alt skills__icon"></i>
+                      <h3 class="services__title">Spring Boot<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-database skills__icon"></i>
+                      <h3 class="services__title">MySQL<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-file-contract skills__icon"></i>
+                      <h3 class="services__title">PHP<br /></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project-title">
-            <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
-            <h3 class="action">
-              <a
-                href="github"
-                title="Source Code"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="web" title="Live Preview" target="_blank" rel="noopener">
-                <i class="bx bx-link-external"></i>
-              </a>
-            </h3>
+          <div>
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-desktop-alt skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Frontend</h1>
+                  <span class="skills__subtitle">More than 2 years</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <!-- tools -->
+                <div class="tech-row">
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-html5-alt skills__icon"></i>
+                      <h3 class="services__title">HTML<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-css3-simple skills__icon"></i>
+                      <h3 class="services__title">CSS<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-java-script skills__icon"></i>
+                      <h3 class="services__title">JavaScript<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-layer-group skills__icon"></i>
+                      <h3 class="services__title">BootStrap<br /></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project-desc">
-            <p>
-              Allowing backpack travelers to perfectly plan their trip through
-              an open-source platform similar to TripAdvisor. With over 1m MAU,
-              YelpCamp has been the crowds favorite in 2021.
-            </p>
-          </div>
-          <div class="project-tech">
-            <p>
-              HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
-              GitHub
-            </p>
+          <div>
+            <!--==================== SKILLS 3 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-wrench skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Tools</h1>
+                  <span class="skills__subtitle">All accessories</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <!-- tools -->
+                <div class="tech-row">
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-visual-studio skills__icon"></i>
+                      <h3 class="services__title">VS Code<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-code-branch skills__icon"></i>
+                      <h3 class="services__title">Git<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-github-alt skills__icon"></i>
+                      <h3 class="services__title">GitHub<br /></h3>
+                    </div>
+                  </div>
+                  <div class="services__contentt">
+                    <div>
+                      <i class="uil uil-edit-alt skills__icon"></i>
+                      <h3 class="services__title">Terminal<br /></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="portfolio-projects">
-          <div class="project-img">
-            <img src="https://picsum.photos/id/140/600/300" alt="" />
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification__section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
+            </div>
           </div>
-          <div class="project-title">
-            <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
-            <h3 class="action">
-              <a
-                href="github"
-                title="Source Code"
-                target="_blank"
-                rel="noopener"
-              >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="web" title="Live Preview" target="_blank" rel="noopener">
-                <i class="bx bx-link-external"></i>
-              </a>
-            </h3>
-          </div>
-          <div class="project-desc">
-            <p>
-              Allowing backpack travelers to perfectly plan their trip through
-              an open-source platform similar to TripAdvisor. With over 1m MAU,
-              YelpCamp has been the crowds favorite in 2021.
-            </p>
-          </div>
-          <div class="project-tech">
-            <p>
-              HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
-              GitHub
-            </p>
+
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Full Stack Web Development
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Masai School, Bangalore</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    Apr 2022 - Nov 2022
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">BCA</h3>
+                  <span class="qualification__subtitle"
+                    >CCLMS College, West Bengal</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    July 2017 - Aug 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Web Developer</h3>
+                  <span class="qualification__subtitle"
+                    >Uaguria Software - Contai, WB</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    Sep 2020 - Feb 2022
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">Repub Member</h3>
+                  <span class="qualification__subtitle"
+                    >Patel G Tech LLP - Kolkata, WB</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    Aug 2019 - Sep 2020
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">My recent works</span>
+
+        <div class="services__container container grid">
+          <!--==================== Project 1 ====================-->
+          <div class="services__content">
+            <div class="portfolio-projects">
+              <div class="project-img">
+                <img src="https://picsum.photos/id/20/600/300" alt="" />
+              </div>
+              <div class="project-title">
+                <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
+                <h3 class="action">
+                  <a
+                    href="github"
+                    title="Source Code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="web"
+                    title="Live Preview"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                  Allowing backpack travelers to perfectly plan their trip
+                  through an open-source platform similar to TripAdvisor. With
+                  over 1m MAU, YelpCamp has been the crowds favorite in 2021.
+                </p>
+              </div>
+              <div class="project-tech">
+                <p>
+                  HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project 2 ====================-->
+          <div class="services__content">
+            <div class="portfolio-projects">
+              <div class="project-img">
+                <img src="https://picsum.photos/id/40/600/300" alt="" />
+              </div>
+              <div class="project-title">
+                <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
+                <h3 class="action">
+                  <a
+                    href="github"
+                    title="Source Code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="web"
+                    title="Live Preview"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                  Allowing backpack travelers to perfectly plan their trip
+                  through an open-source platform similar to TripAdvisor. With
+                  over 1m MAU, YelpCamp has been the crowds favorite in 2021.
+                </p>
+              </div>
+              <div class="project-tech">
+                <p>
+                  HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project 3 ====================-->
+          <div class="services__content">
+            <div class="portfolio-projects">
+              <div class="project-img">
+                <img src="https://picsum.photos/id/60/600/300" alt="" />
+              </div>
+              <div class="project-title">
+                <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
+                <h3 class="action">
+                  <a
+                    href="github"
+                    title="Source Code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="web"
+                    title="Live Preview"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                  Allowing backpack travelers to perfectly plan their trip
+                  through an open-source platform similar to TripAdvisor. With
+                  over 1m MAU, YelpCamp has been the crowds favorite in 2021.
+                </p>
+              </div>
+              <div class="project-tech">
+                <p>
+                  HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project 4 ====================-->
+          <div class="services__content">
+            <div class="portfolio-projects">
+              <div class="project-img">
+                <img src="https://picsum.photos/id/80/600/300" alt="" />
+              </div>
+              <div class="project-title">
+                <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
+                <h3 class="action">
+                  <a
+                    href="github"
+                    title="Source Code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="web"
+                    title="Live Preview"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                  Allowing backpack travelers to perfectly plan their trip
+                  through an open-source platform similar to TripAdvisor. With
+                  over 1m MAU, YelpCamp has been the crowds favorite in 2021.
+                </p>
+              </div>
+              <div class="project-tech">
+                <p>
+                  HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project 5 ====================-->
+          <div class="services__content">
+            <div class="portfolio-projects">
+              <div class="project-img">
+                <img src="https://picsum.photos/id/140/600/300" alt="" />
+              </div>
+              <div class="project-title">
+                <h3 class="title">YelpCamp.com <i>&#8594;</i></h3>
+                <h3 class="action">
+                  <a
+                    href="github"
+                    title="Source Code"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bxl-github"></i>
+                  </a>
+                  <a
+                    href="web"
+                    title="Live Preview"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </h3>
+              </div>
+              <div class="project-desc">
+                <p>
+                  Allowing backpack travelers to perfectly plan their trip
+                  through an open-source platform similar to TripAdvisor. With
+                  over 1m MAU, YelpCamp has been the crowds favorite in 2021.
+                </p>
+              </div>
+              <div class="project-tech">
+                <p>
+                  HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp;
+                  GitHub
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call me</h3>
+                <span class="contatc__subtitle">+91 8372876775</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">E-mail</h3>
+                <span class="contatc__subtitle"
+                  >mail.sanajitjana@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contatc__subtitle">Kolkata, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="contact__label">E-mail</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Description</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="#" class="button button--flex">
+                Send message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <p class="footer__copy">Made with ❤️ by Sanajit Jana</p>
       </div>
-    </section>
+    </footer>
 
-    <!-- Contact -->
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
-    <section class="contact" id="contact">
-      <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect With Me</span>
-      </div>
-      <div class="contact-form">
-        <form action="">
-          <!-- <input type="button" value="Send" class="contact-button" /> -->
-        </form>
-      </div>
-    </section>
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
 
-    <!-- Footer -->
-
-    <p class="footer">Made with ❤️ by Sanajit Jana</p>
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
   </body>
-  <script src="./scripts/script.js"></script>
 </html>
