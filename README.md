@@ -25,4 +25,5 @@ This repositoty is fully Open Source, Feel free to fork this, yes you heard it r
 
 <br/>
 
-![image](https://user-images.githubusercontent.com/76105799/190060690-e0671bbf-a210-4447-9c2f-a287271437e6.png)
+![image](https://user-images.githubusercontent.com/76105799/190212952-77636b2e-b3b2-42ac-8253-647811da2401.png)
+
