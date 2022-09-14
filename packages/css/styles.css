@@ -676,20 +676,14 @@ img {
 /*==================== Project ====================*/
 .services__container {
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .services__content {
   position: relative;
-  background-color: var(--container-color);
-  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  padding: 5px 15px;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
-}
-
-.services__content:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .services__icon {
@@ -779,6 +773,7 @@ img {
 
 .portfolio__content {
   padding: 0 1.5rem;
+  border: 1px solid red;
 }
 
 .portfolio__img {
@@ -843,8 +838,13 @@ img {
 .portfolio-projects {
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+.portfolio-projects:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .portfolio-projects img {
   width: 100%;
   height: 220px;
@@ -852,7 +852,6 @@ img {
 }
 .project-title {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 .project-title .title {
@@ -865,7 +864,7 @@ img {
   font-size: 22px;
 }
 .project-title a {
-  color: #02225a;
+  color: #52627c;
 }
 .project-title a:hover {
   color: #43b5cb;
@@ -1125,7 +1124,8 @@ form textarea {
   }
 
   .services__container {
-    grid-template-columns: max-content;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
 
@@ -1145,9 +1145,6 @@ form textarea {
     grid-template-columns: repeat(auto-fit, minmax(110px, auto));
   }
 
-  .services__content {
-    padding-right: 3.5rem;
-  }
   .services__modal {
     padding: 0 0.5rem;
   }
@@ -1377,7 +1374,7 @@ form textarea {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 218px);
+    grid-template-columns: repeat(2, 300px);
     justify-content: center;
   }
   .services__icon {
