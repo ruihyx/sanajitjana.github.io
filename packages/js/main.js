@@ -68,70 +68,6 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalCloses = document.querySelectorAll(".services__modal-close");
-
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
-
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => {
-    modal(i);
-  });
-});
-
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
-  });
-});
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".portfolio__container", {
-  cssMode: true,
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  /* mousewheel: true,
-  keyboard: true, */
-});
-
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  breakpoints: {
-    568: {
-      slidesPerView: 2,
-    },
-  },
-
-  /* mousewheel: true,
-  keyboard: true, */
-});
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
@@ -216,3 +152,23 @@ let preloader = document.getElementById("loading");
 function preLoader() {
   preloader.style.display = "none";
 }
+
+//conatct form
+// window.onload = function () {
+//   document
+//     .getElementById("contact-form")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault();
+//       // generate a five digit number for the contact_number variable
+//       this.contact_number.value = (Math.random() * 100000) | 0;
+//       // these IDs from the previous steps
+//       emailjs.sendForm("contact_service", "contact_form", this).then(
+//         function () {
+//           console.log("SUCCESS!");
+//         },
+//         function (error) {
+//           console.log("FAILED...", error);
+//         }
+//       );
+//     });
+// };
