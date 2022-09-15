@@ -736,28 +736,16 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid" id="contact-form">
+          <form class="contact__form grid">
             <div class="contact__inputs grid">
-              <input type="hidden" name="contact_number" />
-
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input
-                  type="text"
-                  class="contact__input"
-                  name="user_name"
-                  id="name"
-                />
+                <input type="text" class="contact__input" id="name" />
               </div>
 
               <div class="contact__content">
                 <label for="" class="contact__label">E-mail</label>
-                <input
-                  type="email"
-                  class="contact__input"
-                  name="user_email"
-                  id="email"
-                />
+                <input type="email" class="contact__input" id="email" />
               </div>
             </div>
 
@@ -765,7 +753,6 @@
               <label for="" class="contact__label">Description</label>
               <textarea
                 id="message"
-                name="message"
                 cols="0"
                 rows="7"
                 class="contact__input"
@@ -774,7 +761,7 @@
 
             <div>
               <button
-                onclick="sendEmail()"
+                id="email-submit"
                 class="button button--flex"
                 style="
                   outline: none;

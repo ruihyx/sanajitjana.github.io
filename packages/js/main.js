@@ -154,7 +154,7 @@ function preLoader() {
 }
 
 //conatct form
-function sendEmail() {
+document.getElementById("email-submit").addEventListener("click", () => {
   let params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -170,10 +170,9 @@ function sendEmail() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
-      console.log(res);
       alert("Your message send susscessfully");
     })
     .catch((err) => {
       console.log(err);
     });
-}
+});
