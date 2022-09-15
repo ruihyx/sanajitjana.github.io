@@ -711,7 +711,13 @@
 
               <div>
                 <h3 class="contact__title">Call me</h3>
-                <span class="contatc__subtitle">+91 8372876775</span>
+                <a
+                  href="tel:+91 8372876775"
+                  style="color: #6a797c"
+                  title="click to make a call"
+                >
+                  <span class="contatc__subtitle">+91 8372876775</span>
+                </a>
               </div>
             </div>
 
@@ -720,9 +726,15 @@
 
               <div>
                 <h3 class="contact__title">E-mail</h3>
-                <span class="contatc__subtitle"
-                  >mail.sanajitjana@gmail.com</span
+                <a
+                  href="mailto:mail.sanajitjana@gmail.com"
+                  style="color: #6a797c"
+                  title="click to send email"
                 >
+                  <span class="contatc__subtitle"
+                    >mail.sanajitjana@gmail.com</span
+                  >
+                </a>
               </div>
             </div>
 
@@ -740,18 +752,24 @@
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" id="name" />
+                <input type="text" class="contact__input" id="name" required />
               </div>
 
               <div class="contact__content">
                 <label for="" class="contact__label">E-mail</label>
-                <input type="email" class="contact__input" id="email" />
+                <input
+                  type="email"
+                  class="contact__input"
+                  id="email"
+                  required
+                />
               </div>
             </div>
 
             <div class="contact__content">
-              <label for="" class="contact__label">Description</label>
+              <label for="" class="contact__label">Message</label>
               <textarea
+                required
                 id="message"
                 cols="0"
                 rows="7"

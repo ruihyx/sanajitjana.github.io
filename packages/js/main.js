@@ -155,24 +155,32 @@ function preLoader() {
 
 //conatct form
 document.getElementById("email-submit").addEventListener("click", () => {
-  let params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+  if (
+    document.getElementById("name").value != "" &&
+    document.getElementById("email").value != "" &&
+    document.getElementById("message").value != ""
+  ) {
+    let params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
 
-  const serviceID = "service_embce24";
-  const templateID = "template_cci0niw";
+    const serviceID = "service_embce24";
+    const templateID = "template_cci0niw";
 
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((res) => {
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      alert("Your message send susscessfully");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        alert("Your message send susscessfully!");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  } else {
+    alert("Please fill out all the fields");
+  }
 });
