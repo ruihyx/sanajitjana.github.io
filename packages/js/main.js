@@ -154,21 +154,26 @@ function preLoader() {
 }
 
 //conatct form
-// window.onload = function () {
-//   document
-//     .getElementById("contact-form")
-//     .addEventListener("submit", function (event) {
-//       event.preventDefault();
-//       // generate a five digit number for the contact_number variable
-//       this.contact_number.value = (Math.random() * 100000) | 0;
-//       // these IDs from the previous steps
-//       emailjs.sendForm("contact_service", "contact_form", this).then(
-//         function () {
-//           console.log("SUCCESS!");
-//         },
-//         function (error) {
-//           console.log("FAILED...", error);
-//         }
-//       );
-//     });
-// };
+function sendEmail() {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_embce24";
+  const templateID = "template_cci0niw";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Your message send susscessfully");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
