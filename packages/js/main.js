@@ -154,7 +154,9 @@ function preLoader() {
 }
 
 //conatct form
-document.getElementById("email-submit").addEventListener("submit", () => {
+document.getElementById("contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+
   if (
     document.getElementById("name").value != "" &&
     document.getElementById("email").value != "" &&
