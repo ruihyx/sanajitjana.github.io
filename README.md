@@ -7,7 +7,7 @@
   sanajitjana.github.io - v2
 </h1>
 <p align="center">
-  The second iteration of <a href="https://sanajitjana.github.io" target="_blank">**sanajitjana.github.io**</a> built with HTML, CSS, JavaScript and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+  The second iteration of <a href="https://sanajitjana.github.io" target="_blank">sanajitjana.github.io</a> built with HTML, CSS, JavaScript and hosted with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
 </p>
 
 <!-- website version -->
