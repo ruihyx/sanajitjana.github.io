@@ -857,6 +857,19 @@ img {
   margin: 20px;
   flex-wrap: wrap;
 }
+
+/* github stats */
+
+.calendar {
+  width: 85%;
+  margin: auto;
+  padding: 4rem;
+  border: none !important;
+  padding: 0;
+}
+
+/* projects */
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -1154,8 +1167,13 @@ form textarea {
   .home__social-icon {
     display: none;
   }
+
   .portfolio-content {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+
+  .github-stats {
+    display: none;
   }
 }
 @media screen and (min-width: 381px) and (max-width: 767px) {
@@ -1464,7 +1482,16 @@ form textarea {
   .contact__form {
     width: 460px;
   }
+
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendar {
+    width: 65%;
+    margin: auto;
+    padding: 4rem;
+    border: none !important;
+    padding: 0;
   }
 }
