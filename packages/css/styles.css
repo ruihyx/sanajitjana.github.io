@@ -1409,6 +1409,7 @@ form textarea {
   .project__data {
     padding-top: 0.8rem;
   }
+
   .footer__container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1489,9 +1490,19 @@ form textarea {
 
   .calendar {
     width: 65%;
-    margin: auto;
-    padding: 4rem;
-    border: none !important;
-    padding: 0;
+  }
+}
+
+/* laptop screen */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .calendar {
+    width: 65%;
+  }
+}
+
+/* For 4K devices */
+@media screen and (min-width: 2160px) {
+  .calendar {
+    width: 40%;
   }
 }
