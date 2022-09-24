@@ -712,7 +712,7 @@ img {
   transform: translateX(0.25rem);
 }
 
-/* portfolio */
+/*==================== portfolio ====================*/
 
 .portfolio-content {
   display: grid;
@@ -762,7 +762,7 @@ img {
   flex-wrap: wrap;
 }
 
-/* github stats */
+/*==================== github stats ====================*/
 
 .calendar {
   width: 85%;
@@ -772,7 +772,7 @@ img {
   padding: 0;
 }
 
-/* projects */
+/*==================== projects ====================*/
 
 .project-tech {
   display: flex;
@@ -950,7 +950,6 @@ form textarea {
   color: #fff;
 }
 
-/* Show scroll */
 .show-scroll {
   bottom: 5rem;
 }
@@ -971,7 +970,7 @@ form textarea {
   background-color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
+/*==================== MEDIA QUERIES STARTS====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
   .container {
@@ -1080,6 +1079,7 @@ form textarea {
     display: none;
   }
 }
+/* for medium devices */
 @media screen and (min-width: 381px) and (max-width: 767px) {
   .home__content {
     grid-template-columns: max-content 1fr;
@@ -1160,7 +1160,7 @@ form textarea {
     grid-template-columns: repeat(auto-fit, minmax(120px, auto));
   }
 }
-
+/* for medium devices */
 @media screen and (min-width: 768px) {
   .container {
     margin-left: auto;
@@ -1333,7 +1333,7 @@ form textarea {
   }
 }
 
-/* For large devices */
+/* For large(laptop) devices */
 @media screen and (min-width: 1024px) {
   body {
     margin: 0;
