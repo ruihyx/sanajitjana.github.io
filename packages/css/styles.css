@@ -496,7 +496,7 @@ img {
   flex-wrap: wrap;
 }
 
-.services__contentt {
+.skill__box {
   position: relative;
   background-color: var(--container-color);
   padding: 3.5rem 0.5rem 1.25rem 1.5rem;
@@ -507,7 +507,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(130px, auto));
 }
 
-.services__contentt:hover {
+.skill__box:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -1135,7 +1135,7 @@ form textarea {
     padding-left: 0;
   }
 
-  .services__contentt {
+  .skill__box {
     padding: 40px 10px 20px 10px;
     grid-template-columns: repeat(auto-fit, minmax(110px, auto));
   }
@@ -1204,7 +1204,7 @@ form textarea {
     padding-left: 0;
   }
 
-  .services__contentt {
+  .skill__box {
     padding: 40px 10px 20px 10px;
     grid-template-columns: repeat(auto-fit, minmax(120px, auto));
   }
@@ -1251,7 +1251,7 @@ form textarea {
     padding-left: 0;
   }
 
-  .services__contentt {
+  .skill__box {
     padding: 40px 10px 20px 10px;
     grid-template-columns: repeat(auto-fit, minmax(120px, auto));
   }
@@ -1368,7 +1368,7 @@ form textarea {
     padding-left: 0;
   }
 
-  .services__contentt {
+  .skill__box {
     padding: 3.5rem 0.5rem 1.25rem 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
   }
