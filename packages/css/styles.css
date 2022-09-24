@@ -573,6 +573,11 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
+
+.qualification__section {
+  margin: 150px 0 100px 0;
+}
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
@@ -679,7 +684,6 @@ img {
   transform: translateX(0.25rem);
 }
 
-/*==================== Projects ====================*/
 .portfolio__container {
   overflow: initial;
 }
@@ -707,8 +711,6 @@ img {
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
-
-/*==================== portfolio ====================*/
 
 .portfolio-content {
   display: grid;
