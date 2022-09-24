@@ -551,7 +551,7 @@ img {
 }
 
 /*==================== SKILLS ====================*/
-.tech-row {
+.tech__row {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -574,130 +574,6 @@ img {
 
 .skills__container {
   row-gap: 0;
-}
-
-.skills__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.skills__icon {
-  margin-right: var(--mb-0-75);
-}
-
-.skills__title {
-  font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow {
-  margin-left: auto;
-  transition: 0.4s;
-}
-
-.skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
-.skills__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 80%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__wordpress {
-  width: 70%;
-}
-
-.skills__java {
-  width: 80%;
-}
-
-.skills__tab {
-  width: 70%;
-}
-
-.skills__sql {
-  width: 50%;
-}
-
-.skills__google {
-  width: 70%;
-}
-
-.skills__bank {
-  width: 80%;
-}
-
-.skills__google {
-  width: 70%;
-}
-
-.skills__counter {
-  width: 80%;
-}
-
-.skills__office {
-  width: 90%;
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -1152,7 +1028,7 @@ form textarea {
     justify-content: center;
   }
 
-  .tech-row {
+  .tech__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1221,7 +1097,7 @@ form textarea {
     display: none;
   }
 
-  .tech-row {
+  .tech__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1268,7 +1144,7 @@ form textarea {
     justify-content: center;
   }
 
-  .tech-row {
+  .tech__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1385,7 +1261,7 @@ form textarea {
     grid-template-columns: 0.5fr;
   }
 
-  .tech-row {
+  .tech__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
