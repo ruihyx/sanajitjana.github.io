@@ -22,6 +22,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --gradient: linear-gradient(to right, #40404b, #697979);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -489,6 +490,65 @@ img {
   justify-content: center;
 }
 
+/* statistics  */
+
+.statistic__row .content {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.statistic__row .content .statistic__circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.circular {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  margin-bottom: -10px;
+}
+
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+}
+
+.circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(153, 153, 153);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+  transform: rotate(250deg);
+  border-width: 9px;
+  border-style: solid;
+  border-color: #43b5cb;
+}
+
+.round .bar {
+  clip: unset;
+}
+
 /*==================== SKILLS ====================*/
 .tech-row {
   display: flex;
@@ -681,7 +741,6 @@ img {
 .qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-  /* margin-bottom: var(--mb-1) */
 }
 
 .qualification__rounder {
@@ -808,7 +867,7 @@ img {
   outline: none;
 }
 
-/* new  */
+/* portfolio */
 
 .portfolio-content {
   display: grid;
