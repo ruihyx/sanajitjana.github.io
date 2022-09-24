@@ -6,7 +6,6 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /* Change favorite color */
   --hue-color: 190; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -299,17 +298,14 @@ img {
   color: var(--first-color-alt);
 }
 
-/* show menu */
 .show-menu {
   bottom: 0;
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
 }
 
-/* Change background header */
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
