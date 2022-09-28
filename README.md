@@ -53,12 +53,12 @@ Check this out, **[Live URL](https://sanajitjana.github.io/)**
 
 ## 🚨 Forking this repo (please read!)
 
-This repositoty is fully Open Source, Feel free to fork this, yes you heard it right - you can fork this repo without asking to anyone. Before that please give me a star, fork it and customized as per your wish. If you face any dificulty you can connect with me <a href="mailto:mail.sanajitjana@gmail.com">mail.sanajitjana@gmail.com</a>.
+This repository is fully Open Source, Feel free to fork this, yes you heard it right - you can fork this repo without asking anyone. Before that please give me a star, fork it, and customize it as per your wish. If you face any difficulty you can connect with me <a href="mailto:mail.sanajitjana@gmail.com">mail.sanajitjana@gmail.com</a>.
 
 - Give a start (:star:) and then click on fork (:fork_and_knife:) to your account.
 - Clone your repo and modify the content of <b>index.html</b> according to your requirement.
 - To deploy your website, keep the repo name `<your-github-username>.github.io`. (Please don't give any other name)
-- Push the generated code to the `master` branch of this repository.
+- Push the generated code to this repository's `master` branch.
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
