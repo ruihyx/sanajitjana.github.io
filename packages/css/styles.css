@@ -298,6 +298,27 @@ img {
   color: var(--first-color-alt);
 }
 
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.resume-button:hover {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--first-color);
+  color: #ffff;
+  padding: 1rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.5rem;
+}
+
 .show-menu {
   bottom: 0;
 }
