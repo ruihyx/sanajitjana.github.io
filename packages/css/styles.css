@@ -762,6 +762,16 @@ img {
 
 /*==================== github stats ====================*/
 
+.github-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.github-images img {
+  width: 25%;
+}
+
 .calendar {
   width: 85%;
   margin: auto;
@@ -1077,6 +1087,7 @@ form textarea {
     display: none;
   }
 }
+
 /* for medium devices */
 @media screen and (min-width: 381px) and (max-width: 767px) {
   .home__content {
@@ -1109,6 +1120,16 @@ form textarea {
   .skill__box {
     padding: 40px 10px 20px 10px;
     grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+  }
+
+  .github-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .github-images img {
+    width: 40%;
   }
 }
 
@@ -1156,6 +1177,10 @@ form textarea {
   .skill__box {
     padding: 40px 10px 20px 10px;
     grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+  }
+
+  .github-images img {
+    width: 35%;
   }
 }
 /* for medium devices */
@@ -1308,6 +1333,10 @@ form textarea {
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
+
+  .github-images img {
+    width: 35%;
+  }
   .project__data {
     padding-top: 0.8rem;
   }
@@ -1393,6 +1422,10 @@ form textarea {
   .calendar {
     width: 65%;
   }
+
+  .github-images img {
+    width: 25%;
+  }
 }
 
 /* laptop screen */
@@ -1400,11 +1433,26 @@ form textarea {
   .calendar {
     width: 65%;
   }
+
+  .github-images img {
+    width: 30%;
+  }
+}
+
+/* large screen */
+@media screen and (min-width: 1441px) and (max-width: 2159px) {
+  .github-images img {
+    width: 25%;
+  }
 }
 
 /* For 4K devices */
 @media screen and (min-width: 2160px) {
   .calendar {
     width: 40%;
+  }
+
+  .github-images img {
+    width: 15%;
   }
 }
