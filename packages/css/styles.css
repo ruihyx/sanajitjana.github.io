@@ -177,7 +177,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
@@ -914,6 +914,7 @@ form textarea {
 .footer__bg {
   background-color: var(--first-color-second);
   padding: 10px;
+  margin-bottom: -48px;
 }
 
 .footer__title {
