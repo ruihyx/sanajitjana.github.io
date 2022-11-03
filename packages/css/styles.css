@@ -775,12 +775,6 @@ img {
   color: #43b5cb;
 }
 
-.project-desc {
-  font-size: 15px;
-  margin: 20px;
-  flex-wrap: wrap;
-}
-
 /*==================== github stats ====================*/
 
 .github-images {
@@ -803,13 +797,37 @@ img {
 
 /*==================== projects ====================*/
 
+.project-desc {
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin: 20px 20px 20px 20px;
+}
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 0px 20px;
   font-size: 15px;
-  font-weight: 500;
+  color: #697979;
+  margin: 10px 20px 20px 20px;
+}
+.action-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
   margin: 20px 20px 30px 20px;
+}
+.project-action {
+  background-color: rgb(237, 237, 237);
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  color: rgb(87, 87, 87);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 5px 0px 0px;
+}
+.project-action:hover {
+  cursor: pointer;
+  background-color: rgb(227, 227, 227);
 }
 .contact-form {
   display: grid;
