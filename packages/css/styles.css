@@ -421,7 +421,7 @@ img {
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #ffff;
+  color: #3b3535;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
