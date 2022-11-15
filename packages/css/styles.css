@@ -661,6 +661,9 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, auto));
 }
+.skill__box div {
+  text-align: center;
+}
 
 .skill__box:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1336,7 +1339,6 @@ form textarea {
   }
 
   .skill__box {
-    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(130px, auto));
   }
 
