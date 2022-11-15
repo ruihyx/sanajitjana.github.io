@@ -213,6 +213,7 @@
         </div>
         <div class="nav__btns">
           <a
+            id="resumeToDrive"
             class="resume-button"
             href="./packages/resume/Sanajit-Jana-Resume.pdf"
             download="Sanajit-Jana-Resume"
@@ -355,6 +356,7 @@
 
             <div class="about__buttons">
               <a
+                id="resumeToDriveURL"
                 href="./packages/resume/Sanajit-Jana-Resume.pdf"
                 download="Sanajit-Jana-Resume"
                 class="button button--flex"
@@ -1177,5 +1179,24 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
+    <script>
+      document
+        .getElementById("resumeToDrive")
+        .addEventListener("click", myFuntion);
+      function myFuntion(e) {
+        window.location.href =
+          "https://drive.google.com/file/d/1vIW8QutYvTxiIh-wi9mME4m4ibYGYNrf/view";
+        e.target.setAttribute("target", "_blank");
+      }
+
+      document
+        .getElementById("resumeToDriveURL")
+        .addEventListener("click", myFuntion);
+      function myFuntion(e) {
+        window.location.href =
+          "https://drive.google.com/file/d/1vIW8QutYvTxiIh-wi9mME4m4ibYGYNrf/view";
+        e.target.setAttribute("target", "_blank");
+      }
+    </script>
   </body>
 </html>
