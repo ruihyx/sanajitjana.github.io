@@ -366,6 +366,7 @@ img {
 }
 
 .home__data {
+  margin-top: 30px;
   text-align: center;
   grid-column: 1/3;
 }
@@ -1184,6 +1185,7 @@ form textarea {
   }
 
   .home__data {
+    margin-top: 0px;
     text-align: left;
     grid-column: initial;
   }
