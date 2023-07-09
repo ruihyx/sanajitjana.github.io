@@ -896,6 +896,10 @@ form textarea {
   background: var(--hover);
 }
 
+
+#project4{
+  width: 70%;
+}
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
