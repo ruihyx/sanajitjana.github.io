@@ -775,6 +775,7 @@ img {
 }
 .project-title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .project-title .title {
@@ -785,6 +786,11 @@ img {
 .project-title .action {
   margin: 20px 20px 0px 10px;
   font-size: 22px;
+ 
+}
+#h4{
+  font-size: 13px;
+  font-style:italic;
 }
 .project-title a {
   color: #52627c;
