@@ -169,7 +169,10 @@ img {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
+#wide{
+  max-width: 1200px;
 
+}
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -478,7 +481,7 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
   align-items: center;
-  margin-top: 40%;
+  margin-top: 4%;
 }
 
 .about__description {
