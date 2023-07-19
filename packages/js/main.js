@@ -197,3 +197,15 @@ $(".counting").each(function () {
     }
   );
 });
+
+
+var detailsButton = document.getElementById('detailsButton');
+var detailsSection = document.getElementById('detailsSection');
+
+detailsButton.addEventListener('click', function() {
+    if (detailsSection.style.display === 'none' || detailsSection.style.display === '') {
+        detailsSection.style.display = 'block';
+    } else {
+        detailsSection.style.display = 'none';
+    }
+});
