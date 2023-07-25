@@ -756,8 +756,26 @@ ul {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-.details {
+#responsibilitiesSection {
   display: none;
+}
+
+#responsibilitiesSection2 {
+  display: none;
+}
+
+#responsibilitiesSection3 {
+  display: none;
+}
+#responsibilitiesSection4 {
+  display: none;
+}
+
+
+#detailsButton,#detailsButton2,#detailsButton3,#detailsButton4{
+  padding: 5px;
+  background-color: #43b5cb;
+  color: white;
 }
 
 .portfolio-projects:hover {

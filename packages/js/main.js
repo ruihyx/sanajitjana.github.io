@@ -120,92 +120,140 @@ themeButton.addEventListener("click", () => {
 });
 
 /*==================== PRELOADER ====================*/
-let preloader = document.getElementById("loading");
-function preLoader() {
-  preloader.style.display = "none";
-}
+// let preloader = document.getElementById("loading");
+// function preLoader() {
+//   preloader.style.display = "none";
+// }
 
-/*==================== FORM SUBMIT ====================*/
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
+// /*==================== FORM SUBMIT ====================*/
+// document.getElementById("contact-form").addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  //button animation
-  document.getElementById("email-submit").innerText = "Sending...";
+//   //button animation
+//   document.getElementById("email-submit").innerText = "Sending...";
 
-  if (
-    document.getElementById("name").value != "" &&
-    document.getElementById("email").value != "" &&
-    document.getElementById("message").value != ""
-  ) {
-    let params = {
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
+//   if (
+//     document.getElementById("name").value != "" &&
+//     document.getElementById("email").value != "" &&
+//     document.getElementById("message").value != ""
+//   ) {
+//     let params = {
+//       name: document.getElementById("name").value,
+//       email: document.getElementById("email").value,
+//       message: document.getElementById("message").value,
+//     };
 
-    const serviceID = "service_embce24";
-    const templateID = "template_cci0niw";
+//     const serviceID = "service_embce24";
+//     const templateID = "template_cci0niw";
 
-    emailjs
-      .send(serviceID, templateID, params)
-      .then((res) => {
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
+//     emailjs
+//       .send(serviceID, templateID, params)
+//       .then((res) => {
+//         document.getElementById("name").value = "";
+//         document.getElementById("email").value = "";
+//         document.getElementById("message").value = "";
 
-        document.getElementById("email-submit").innerHTML = `
-          Send message
-          <i class="uil uil-message button__icon"></i>`;
+//         document.getElementById("email-submit").innerHTML = `
+//           Send message
+//           <i class="uil uil-message button__icon"></i>`;
 
-        alert("Your message send susscessfully!");
-      })
-      .catch((err) => {
-        document.getElementById("email-submit").innerHTML = `
-          Send message
-          <i class="uil uil-message button__icon"></i>`;
-        console.log(err);
-      });
+//         alert("Your message send susscessfully!");
+//       })
+//       .catch((err) => {
+//         document.getElementById("email-submit").innerHTML = `
+//           Send message
+//           <i class="uil uil-message button__icon"></i>`;
+//         console.log(err);
+//       });
+//   } else {
+//     alert("Please fill out all the fields");
+//   }
+// });
+
+/*==================== GITHUB CALENDAR ====================*/
+// GitHubCalendar(".calendar", "sanajitjana", {
+//   responsive: true,
+//   global_stats: false,
+//   tooltips: true,
+// });
+
+// $(".counting").each(function () {
+//   var $this = $(this),
+//     countTo = $this.attr("data-count");
+
+//   $({ countNum: $this.text() }).animate(
+//     {
+//       countNum: countTo,
+//     },
+//     {
+//       duration: 3000,
+//       easing: "linear",
+//       step: function () {
+//         $this.text(Math.floor(this.countNum));
+//       },
+//       complete: function () {
+//         $this.text(this.countNum);
+//       },
+//     }
+//   );
+// });
+
+const detailsButton = document.getElementById('detailsButton');
+const responsibilitiesSection = document.getElementById('responsibilitiesSection');
+
+let isDetailsVisible = false;
+
+detailsButton.addEventListener('click', () => {
+  console.log('click')
+  isDetailsVisible = !isDetailsVisible;
+  if (isDetailsVisible) {
+    responsibilitiesSection.style.display = 'block';
   } else {
-    alert("Please fill out all the fields");
+    responsibilitiesSection.style.display = 'none';
   }
 });
 
-/*==================== GITHUB CALENDAR ====================*/
-GitHubCalendar(".calendar", "sanajitjana", {
-  responsive: true,
-  global_stats: false,
-  tooltips: true,
+const detailsButton2 = document.getElementById('detailsButton2');
+const responsibilitiesSection2 = document.getElementById('responsibilitiesSection2');
+
+let isDetailsVisible2 = false;
+
+detailsButton2.addEventListener('click', () => {
+  console.log('click2')
+  isDetailsVisible2 = !isDetailsVisible2;
+  if (isDetailsVisible2) {
+    responsibilitiesSection2.style.display = 'block';
+  } else {
+    responsibilitiesSection2.style.display = 'none';
+  }
 });
 
-$(".counting").each(function () {
-  var $this = $(this),
-    countTo = $this.attr("data-count");
+const detailsButton3 = document.getElementById('detailsButton3');
+const responsibilitiesSection3 = document.getElementById('responsibilitiesSection3');
 
-  $({ countNum: $this.text() }).animate(
-    {
-      countNum: countTo,
-    },
-    {
-      duration: 3000,
-      easing: "linear",
-      step: function () {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function () {
-        $this.text(this.countNum);
-      },
-    }
-  );
+let isDetailsVisible3 = false;
+
+detailsButton3.addEventListener('click', () => {
+  console.log('click3')
+  isDetailsVisible3 = !isDetailsVisible3;
+  if (isDetailsVisible3) {
+    responsibilitiesSection3.style.display = 'block';
+  } else {
+    responsibilitiesSection3.style.display = 'none';
+  }
 });
 
+const detailsButton4 = document.getElementById('detailsButton4');
+const responsibilitiesSection4 = document.getElementById('responsibilitiesSection4');
 
-var detailsButton = document.getElementById('detailsButton');
-var detailsSection = document.getElementById('detailsSection');
+let isDetailsVisible4 = false;
 
-detailsButton.addEventListener('click', function() {
-    if (detailsSection.style.display === 'none' || detailsSection.style.display === '') {
-        detailsSection.style.display = 'block';
-    } else {
-        detailsSection.style.display = 'none';
-    }
+detailsButton4.addEventListener('click', () => {
+  console.log('click4')
+  isDetailsVisible4 = !isDetailsVisible4;
+  if (isDetailsVisible4) {
+    responsibilitiesSection4.style.display = 'block';
+  } else {
+    responsibilitiesSection4.style.display = 'none';
+  }
 });
