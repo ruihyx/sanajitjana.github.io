@@ -481,7 +481,7 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
   align-items: center;
-  margin-top: %;
+  /* margin-top: %; */
 }
 
 .about__description {
@@ -806,6 +806,19 @@ img {
   color: #43b5cb;
 }
 
+#id{
+  width: 100%; /* Set the width to 100% of the container */
+  height: auto; /* Let the height adjust automatically */
+  display: flex; /* Optional: If you want to center the image horizontally and vertically */
+  justify-content: center; /* Optional: Center horizontally */
+  align-items: center; 
+}
+
+#fogimg{
+  object-fit: contain; /* This property ensures the image retains its aspect ratio and fits inside the container */
+  max-height: 100%; /* Limit the image's height to not exceed the container */
+  max-width: 100%; 
+}
 /*==================== github stats ====================*/
 
 .github-images {
@@ -843,7 +856,7 @@ img {
 }
 .action-area {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0px 10px;
   margin: 20px 20px 30px 20px;
 }
@@ -858,7 +871,8 @@ img {
 }
 .project-action:hover {
   cursor: pointer;
-  background-color: rgb(227, 227, 227);
+  background-color: #43b5cb;
+  color: white;
 }
 .contact-form {
   display: grid;
